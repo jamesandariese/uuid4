@@ -51,3 +51,8 @@ func (u *UUID) HexString() string {
 func (u *UUID) Bytes() []byte {
 	return u.storage[:]
 }
+
+func DashString() string {
+	u := NewUUID()
+	return u.DashString()
+}
